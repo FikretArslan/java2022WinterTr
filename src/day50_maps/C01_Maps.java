@@ -21,6 +21,7 @@ public class C01_Maps {
         // Simdi de value'leri index ile ulasabilecegimiz bir sekle sokalim
         Collection<String> sinifValueColl =sinifListMap.values();
         System.out.println(sinifValueColl);
+
         List<String> sinifValueList=new ArrayList<>();
         sinifValueList.addAll(sinifValueColl);
         System.out.println(sinifValueList);
@@ -34,6 +35,8 @@ public class C01_Maps {
         System.out.println(ilkValue);
         String ilkValueArray[]=ilkValue.split(", ");
         int innerArrayBoyut=ilkValueArray.length;
+
+
         String valueMDArr[][]=new String[outerArrayBoyut][innerArrayBoyut];
         for (int i = 0; i <outerArrayBoyut ; i++) {
             String temp[]=sinifValueList.get(i).split(", ");
